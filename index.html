@@ -10,7 +10,34 @@
   <div id="app">
     <v-app>
       <v-main>
-        <v-container>Hello world</v-container>
+        <v-container>
+            <v-row>
+                <v-col style="height: 50px;"></v-col>
+                <v-col :cols=12>Hi, I'm Kenny</v-col>
+                <v-col :cols=12>I'm a husband, father and Software Developer. I like to solve very specific problems and help others.</v-col>
+                <v-col :cols=12>Tech I like a little bit more</v-col>
+                <v-col :cols=12>
+                    <v-chip class="ma-2" color="teal accent-4" outlined>Vue.js</v-chip>
+                    <v-chip class="ma-2" color="red accent-4" outlined>Laravel</v-chip>
+                    <v-chip class="ma-2" color="blue darken-2" outlined>Javascript</v-chip>
+                    <v-chip class="ma-2" color="deep-purple accent-2" outlined>PHP</v-chip>
+                </v-col>
+                <v-col :cols=12>Tech I use, and also like</v-col>
+                <v-col :cols=12>
+                    <v-chip class="ma-2" outlined>Orchid</v-chip>
+                    <v-chip class="ma-2" outlined>GIT</v-chip>
+                    <v-chip class="ma-2" outlined>Docker</v-chip>
+                    <v-chip class="ma-2" outlined>HTML/CSS</v-chip>
+                </v-col>
+                <v-col :cols=12>Tech I'm currently learning (because of job or something else)</v-col>
+                <v-col :cols=12>
+                    <v-chip class="ma-2" outlined>Wordpress</v-chip>
+                    <v-chip class="ma-2" outlined>Jest</v-chip>
+                    <v-chip class="ma-2" outlined>PHPUnit</v-chip>
+                    <v-chip class="ma-2" outlined>SCSS</v-chip>
+                </v-col>
+            </v-row>
+        </v-container>
       </v-main>
     </v-app>
   </div>
