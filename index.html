@@ -12,9 +12,9 @@
       <v-main>
         <v-container>
             <v-row>
-                <v-col style="height: 50px;"></v-col>
+                <v-col style="height: 15px;"></v-col>
                 <v-col :cols=12>Hi, I'm Kenny</v-col>
-                <v-col :cols=12>I'm a husband, father and Software Developer. I like to solve very specific problems and help others.</v-col>
+                <v-col :cols=12>I'm a husband, father and Software Developer. I like to code, for now, and help others in any possible way. My <a style="text-decoration: none;" href="https://github.com/barrerakj">Github</a> is normal, but you can still check it.</v-col>
                 <v-col :cols=12>Tech I like a little bit more</v-col>
                 <v-col :cols=12>
                     <v-chip class="ma-2" color="teal accent-4" outlined>Vue.js</v-chip>
@@ -22,20 +22,80 @@
                     <v-chip class="ma-2" color="blue darken-2" outlined>Javascript</v-chip>
                     <v-chip class="ma-2" color="deep-purple accent-2" outlined>PHP</v-chip>
                 </v-col>
-                <v-col :cols=12>Tech I use, and also like</v-col>
-                <v-col :cols=12>
-                    <v-chip class="ma-2" outlined>Orchid</v-chip>
-                    <v-chip class="ma-2" outlined>GIT</v-chip>
-                    <v-chip class="ma-2" outlined>Docker</v-chip>
-                    <v-chip class="ma-2" outlined>HTML/CSS</v-chip>
+            </v-row>
+            <v-row>
+                <v-col :cols=4>
+                    <v-row>
+                        <v-col :cols=12>Tech I use, and also like</v-col>
+                        <v-col :cols=12>
+                            <v-chip class="ma-2" outlined>Orchid</v-chip>
+                            <v-chip class="ma-2" outlined>GIT</v-chip>
+                            <v-chip class="ma-2" outlined>Docker</v-chip>
+                            <v-chip class="ma-2" outlined>HTML/CSS</v-chip>
+                        </v-col>
+                    </v-row>
                 </v-col>
-                <v-col :cols=12>Tech I'm currently learning (because of job or something else)</v-col>
-                <v-col :cols=12>
-                    <v-chip class="ma-2" outlined>Wordpress</v-chip>
-                    <v-chip class="ma-2" outlined>Jest</v-chip>
-                    <v-chip class="ma-2" outlined>PHPUnit</v-chip>
-                    <v-chip class="ma-2" outlined>SCSS</v-chip>
+                <v-col :cols=5>
+                    <v-row>
+                        <v-col :cols=12>Tech I'm currently learning (because of job or something else)</v-col>
+                        <v-col :cols=12>
+                            <v-chip class="ma-2" outlined>Wordpress</v-chip>
+                            <v-chip class="ma-2" outlined>Jest</v-chip>
+                            <v-chip class="ma-2" outlined>PHPUnit</v-chip>
+                            <v-chip class="ma-2" outlined>SCSS</v-chip>
+                        </v-col>
+                    </v-row>
                 </v-col>
+            </v-row>                
+            <v-row>
+                <v-col :cols=12>Some links to know me better</v-col>
+
+                <v-card class="mx-auto" max-width="275">
+                    <v-img class="white--text align-end" height="150px" src="twitter.jpg"></v-img>
+                    <v-card-title>Twitter</v-card-title>
+                    <v-card-subtitle class="pb-0">Only social media I really enjoy</v-card-subtitle>
+                    <v-card-actions>
+                            <v-btn color="orange" href="https://twitter.com/lordofwisdom" target="_blank" text>View</v-btn>
+                    </v-card-actions>
+                </v-card>
+
+                <v-card class="mx-auto" max-width="275">
+                    <v-img class="white--text align-end" height="150px" src="linkedin.jpg"></v-img>
+                    <v-card-title>LinkedIn</v-card-title>
+                    <v-card-subtitle class="pb-0">Because this is always a must.</v-card-subtitle>
+    
+                    <v-card-actions>
+                        <v-btn color="orange" href="https://www.linkedin.com/in/kenny-barrera/" target="_blank" text>View</v-btn>
+                    </v-card-actions>
+                </v-card>
+
+                <v-card class="mx-auto" max-width="275">
+                    <v-img class="white--text align-end" height="150px" src="stackoverflow.jpg"></v-img>
+                    <v-card-title>StackOverflow - Spanish</v-card-title>
+                    <v-card-subtitle class="pb-0">Yes, Spanish is my native language</v-card-subtitle>
+    
+                    <v-card-actions>
+                        <v-btn color="orange" href="https://es.stackoverflow.com/users/47532/kenny-barrera" target="_blank" text>View</v-btn>
+                    </v-card-actions>
+                </v-card>
+
+                <v-card class="mx-auto" max-width="275">
+                    <v-img class="white--text align-end" height="150px" src="medium.jpg"></v-img>
+                    <v-card-title>Medium</v-card-title>
+                    <v-card-subtitle class="pb-0">I know, just one post from 3 years ago. But I promise to write more.</v-card-subtitle>
+    
+                    <v-card-actions>
+                        <v-btn color="orange" href="https://medium.com/@barrerakj" target="_blank" text>View</v-btn>
+                    </v-card-actions>
+                </v-card>
+
+            </v-row>
+
+            <v-row>
+                <v-col><v-divider></v-divider></v-col>
+            </v-row>
+            <v-row>                
+                <v-col :cols=12>Wanna to talk? Drop me a DM or email me at barrerakj@gmail.com</v-col>
             </v-row>
         </v-container>
       </v-main>
@@ -48,6 +108,11 @@
     new Vue({
       el: '#app',
       vuetify: new Vuetify(),
+      data () {
+          return {
+              show: false,
+          }
+      }
     })
   </script>
 </body>
